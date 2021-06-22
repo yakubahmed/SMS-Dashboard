@@ -22,7 +22,7 @@
               <ul class="menu">
                 <!-- .menu-item -->
                 <li class="menu-item has-active">
-                  <a href="../Dashboard/" class="menu-link"><span class="menu-icon fas fa-home"></span> <span class="menu-text">Dashboard</span></a>
+                  <a href="<?php echo BASE_URL?>" class="menu-link"><span class="menu-icon fas fa-home"></span> <span class="menu-text">Dashboard</span></a>
                 </li><!-- /.menu-item -->
   
                 <!-- .menu-item -->
@@ -30,10 +30,10 @@
                   <a href="#" class="menu-link"><span class="menu-icon oi oi-person"></span> <span class="menu-text">Student</span></a> <!-- child menu -->
                   <ul class="menu">
                     <li class="menu-item">
-                      <a href="index.php" class="menu-link">Add / Manage student</a>
+                      <a href="<?php echo BASE_URL ?>student/" class="menu-link">Add / Manage student</a>
                     </li>
                     <li class="menu-item">
-                      <a href="attendance.php" class="menu-link">Attendance</a>
+                      <a href="<?php echo BASE_URL ?>student/attendance.php" class="menu-link">Attendance</a>
                     </li>
    
                   </ul><!-- /child menu -->
@@ -43,30 +43,145 @@
                   <a href="#" class="menu-link"><span class="menu-icon oi oi-browser"></span> <span class="menu-text">Academics</span></a> <!-- child menu -->
                   <ul class="menu">
                     <li class="menu-item">
-                      <a href="../Academics/class.php" class="menu-link">Class</a>
+                      <a href="<?php echo BASE_URL ?>Academics/class.php" class="menu-link">Class</a>
                     </li>
                     <li class="menu-item">
-                      <a href="../Academics/level.php" class="menu-link">Levels</a>
+                      <a href="<?php echo BASE_URL ?>Academics/level.php" class="menu-link">Levels</a>
                     </li>
                     <li class="menu-item">
-                      <a href="../Academics/subject.php" class="menu-link">Subject</a>
+                      <a href="<?php echo BASE_URL ?>Academics/subject.php" class="menu-link">Subject</a>
                     </li>
                     <li class="menu-item">
-                      <a href="../Academics/subject-to-class.php" class="menu-link">Subject to Class</a>
+                      <a href="<?php echo BASE_URL ?>Academics/subject-to-class.php" class="menu-link">Subject to Class</a>
                     </li>
                     <li class="menu-item">
-                      <a href="../Academics/session.php" class="menu-link">Session</a>
+                      <a href="<?php echo BASE_URL ?>Academics/session.php" class="menu-link">Session</a>
                     </li>
                     <li class="menu-item">
-                      <a href="../Academics/shift.php" class="menu-link">Shift</a>
+                      <a href="<?php echo BASE_URL ?>Academics/shift.php" class="menu-link">Shift</a>
                     </li>
                  
                   </ul><!-- /child menu -->
                 </li><!-- /.menu-item -->
+
+                <!-- <li class="menu-header">Accounting </li>/.menu-header -->
                 <!-- .menu-item -->
-                <li class="menu-item">
-                  <a href="landing-page.html" class="menu-link"><span class="menu-icon fas fa-rocket"></span> <span class="menu-text">Landing Page</span></a>
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon oi oi-person"></span> <span class="menu-text">Finance</span></a> <!-- child menu -->
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="<?php echo BASE_URL ?>finance/" class="menu-link">Collect fee</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="<?php echo BASE_URL ?>finance/fee-payments.php" class="menu-link">Fee payments</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="<?php echo BASE_URL ?>finance/fee-type.php" class="menu-link">Fee type</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="<?php echo BASE_URL ?>finance/accounts.php" class="menu-link">Accounts</a>
+                    </li>
+   
+                  </ul><!-- /child menu -->
                 </li><!-- /.menu-item -->
+
+
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-dollar-sign"></span> <span class="menu-text">Income</span></a>
+                  <ul class='menu'>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>income/type.php" class="menu-link">Income type</a>
+                    </li>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>income/" class="menu-link">Add income</a>
+                    </li>
+                  </ul>
+                </li><!-- /.menu-item -->
+
+
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="#" class="menu-link"><span class="menu-icon fa fa-file-invoice"></span> <span class="menu-text">Expense</span></a>
+                  <ul class='menu'>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL;?>expense/type.php" class="menu-link">Expense type</a>
+                    </li>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>expense/" class="menu-link">Add Expense</a>
+                    </li>
+                  </ul>
+                </li><!-- /.menu-item -->
+
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="<?= BASE_URL ?>finance/income.php" class="menu-link"><span class="menu-icon fa fa-pen"></span> <span class="menu-text">Exam</span></a>
+                  <ul class='menu'>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>" class="menu-link">Expense head</a>
+                    </li>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>" class="menu-link">Add Expense</a>
+                    </li>
+                  </ul>
+                </li><!-- /.menu-item -->
+
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="<?= BASE_URL ?>/finance/income.php" class="menu-link"><span class="menu-icon fa fa-users"></span> <span class="menu-text">Human Resources</span></a>
+                  <ul class='menu'>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>/" class="menu-link">Expense head</a>
+                    </li>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>/" class="menu-link">Add Expense</a>
+                    </li>
+                  </ul>
+                </li><!-- /.menu-item -->
+
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="<?= BASE_URL ?>/finance/income.php" class="menu-link"><span class="menu-icon fa fa-lock"></span> <span class="menu-text">Permission</span></a>
+                  <ul class='menu'>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>/" class="menu-link">Expense head</a>
+                    </li>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>/" class="menu-link">Add Expense</a>
+                    </li>
+                  </ul>
+                </li><!-- /.menu-item -->
+
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="<?= BASE_URL ?>/finance/income.php" class="menu-link"><span class="menu-icon fa fa-file"></span> <span class="menu-text">Reports</span></a>
+                  <ul class='menu'>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>/" class="menu-link">Expense head</a>
+                    </li>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>/" class="menu-link">Add Expense</a>
+                    </li>
+                  </ul>
+                </li><!-- /.menu-item -->
+
+                <!-- .menu-item -->
+                <li class="menu-item has-child">
+                  <a href="<?= BASE_URL ?>/finance/income.php" class="menu-link"><span class="menu-icon fa fa-file"></span> <span class="menu-text">Setting</span></a>
+                  <ul class='menu'>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>/" class="menu-link">Expense head</a>
+                    </li>
+                    <li class='menu-item'>
+                      <a href="<?= BASE_URL ?>/" class="menu-link">Add Expense</a>
+                    </li>
+                  </ul>
+                </li><!-- /.menu-item -->
+                
+                <!-- .menu-item -->
+                <!-- <li class="menu-item">
+                  <a href="<?php //BASE_URL ?>/finance/expense.php" class="menu-link"><span class="menu-icon fa fa-file-invoice"></span> <span class="menu-text">Expense</span></a>
+                </li>/.menu-item -->
                
                 
               </ul><!-- /.menu -->
